@@ -5,15 +5,11 @@
     <key>Description</key>
     <string>Downloads latest Fuze.app.</string>
     <key>Identifier</key>
-    <string>com.github.swy.download.Fuze</string>
+    <string>com.github.swy.Fuze.download</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>Fuze</string>
-        <key>DOWNLOAD_URL</key>
-        <string>https://www.fuzemeeting.com/extensions/FuzeMeetingMac.dmg</string>
-        <key>USER_AGENT</key>
-        <string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
@@ -25,11 +21,11 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>%DOWNLOAD_URL%</string>
+                <string>http://www.fuzemeeting.com/downloads/fuze/Fuze.dmg</string>
                 <key>request_headers</key>
                 <dict>
                         <key>user-agent</key>
-                        <string>%USER_AGENT%</string>
+                        <string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
                 </dict>
                 <key>filename</key>
                 <string>%NAME%.dmg</string>
