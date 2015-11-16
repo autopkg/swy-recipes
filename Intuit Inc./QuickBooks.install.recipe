@@ -10,6 +10,8 @@
 	<string>com.github.swy.install.QuickBooks</string>
 	<key>Input</key>
 	<dict>
+		<key>APP_FILENAME</key>
+		<string>QuickBooks 2016</string>
 		<key>NAME</key>
 		<string>QuickBooks</string>
 	</dict>
@@ -41,7 +43,7 @@
 						<key>destination_path</key>
 						<string>/Applications</string>
 						<key>source_item</key>
-						<string>%NAME%.app</string>
+						<string>%APP_FILENAME%.app</string>
 					</dict>
 				</array>
 			</dict>
