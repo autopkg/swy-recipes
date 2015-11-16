@@ -7,9 +7,11 @@
 	<key>Description</key>
 	<string>Downloads the latest version of QuickBooks.</string>
 	<key>Identifier</key>
-	<string>com.github.swy.download.QuickBooks</string>
+	<string>com.github.swy.download.QuickBooks2016</string>
 	<key>Input</key>
 	<dict>
+		<key>APP_FILENAME</key>
+		<string>QuickBooks 2016</string>
 		<key>NAME</key>
 		<string>QuickBooks</string>
 		<key>SPARKLE_FEED_URL</key>
@@ -65,6 +67,18 @@
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
 		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>FileMover</string>
+			<key>Arguments</key>
+			<dict>
+				<key>source</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/%NAME%.app</string>
+				<key>target</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/%NAME% 2016.app</string>
+			</dict>
+		</dict>
+		
 	</array>
 </dict>
 </plist>
