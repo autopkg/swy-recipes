@@ -10,8 +10,6 @@
 	<string>com.github.swy.pkg.QuickBooks</string>
 	<key>Input</key>
 	<dict>
-		<key>APP_FILENAME</key>
-		<string>QuickBooks 2016</string>
 		<key>BUNDLE_ID</key>
 		<string>com.intuit.QuickBooks2016</string>
 		<key>NAME</key>
