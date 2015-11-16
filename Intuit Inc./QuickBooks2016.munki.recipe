@@ -27,7 +27,7 @@
 			<key>display_name</key>
 			<string>QuickBooks 2016</string>
 			<key>name</key>
-			<string>%NAME%</string>
+			<string>%NAME% 2016</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
