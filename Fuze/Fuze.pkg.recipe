@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.swy.download.Fuze</string>
+	<string>com.github.swy.Fuze.download</string>
 	<key>Process</key>
 	<array>
 		<dict>
