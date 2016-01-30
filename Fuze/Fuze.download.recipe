@@ -21,7 +21,7 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>http://www.fuzemeeting.com/downloads/fuze/Fuze.dmg</string>
+                <string>https://www.fuzemeeting.com/extensions/fuze/Fuze.dmg</string>
                 <key>request_headers</key>
                 <dict>
                         <key>user-agent</key>
