@@ -10,8 +10,6 @@
 	<string>com.github.swy.download.SpatialMediaMetadataInjector</string>
 	<key>Input</key>
 	<dict>
-		<key>DOWNLOAD_URL</key>
-		<string>https://github-cloud.s3.amazonaws.com/releases/30674951/7bda2a9a-096c-11e6-960b-8e0a39aebc0a.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20160503%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20160503T140413Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=68e3770afd3e5434e662a77d636c74a77656eb7611b3aa789e438d9c318ad47d&amp;X-Amz-SignedHeaders=host&amp;actor_id=1143538&amp;response-content-disposition=attachment%3B%20filename%3D360.Video.Metadata.Tool.mac.zip&amp;response-content-type=application%2Foctet-stream</string>
 		<key>NAME</key>
 		<string>Spatial Media Metadata Injector</string>
 	</dict>
@@ -20,15 +18,24 @@
 	<key>Process</key>
 	<array>
 		<dict>
+        <key>Arguments</key>
+        <dict>
+            <key>asset_regex</key>
+            <string>.*\.mac\.zip</string>
+            <key>github_repo</key>
+            <string>google/spatial-media</string>
+        </dict>
+        <key>Processor</key>
+        <string>GitHubReleasesInfoProvider</string>
+        </dict>
+		<dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.zip</string>
-				<key>url</key>
-				<string>%DOWNLOAD_URL%</string>
-			</dict>
-			<key>Processor</key>
-			<string>URLDownloader</string>
+				<string>%NAME%-%version%.zip</string>
+            </dict>
 		</dict>
 		<dict>
 			<key>Processor</key>
