@@ -45,6 +45,8 @@
 				<string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
 				<key>dmg_root</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications</string>
+				<key>dmg_megabytes</key>
+				<string>250</string>
 			</dict>
 			<key>Processor</key>
 			<string>DmgCreator</string>
@@ -56,8 +58,6 @@
 				<string>%dmg_path%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
-				<key>dmg_megabytes</key>
-				<string>225</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
