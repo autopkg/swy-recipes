@@ -32,7 +32,6 @@ class TeamsWebhook(Processor):
                     "https://github.com/autopkg/nmcspadden-recipes/blob/master/PostProcessors/Yo.py"
                     "The majority of this is stolen from https://github.com/grahampugh/recipes/blob/master/PostProcessors/slacker.py")
     input_variables = {
-        },
         "policy_category": {
             "required": False,
             "description": ("Policy Category.")
@@ -65,7 +64,7 @@ class TeamsWebhook(Processor):
             print "Title: %s" % prod_name
             print "Category: %s" % category
             print "Policy Category: %s" % policy_category
-            teams_text = "*New Item added to Munki:*\nURL: %s\nTitle:  *%s*" % (JSS_URL, prod_name, jss_policy_version, category, jss_policy_name)
+            teams_text = "*New Item added to Munki:*\nURL: %s\nTitle:  *%s*" % (prod_name, category)
 
             teams_data = {'text': teams_text}
 
