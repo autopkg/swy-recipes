@@ -63,6 +63,7 @@ class TeamsWebhook(Processor):
         category = self.env.get("category")
         prod_name = self.env.get("prod_name")
         webhook_url = self.env.get("webhook_url")
+        munki_changed_objects = self.env.get("munki_changed_objects")
 
         if munki_changed_objects:
             print "Title: %s" % prod_name
