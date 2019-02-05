@@ -13,7 +13,7 @@
 		<key>DOWNLOAD_URL</key>
 		<string>https://peacockmedia.software/mac/integrity-plus/integrity-plus.dmg</string>
 		<key>NAME</key>
-		<string>Integrity plus</string>
+		<string>IntegrityPlus</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
