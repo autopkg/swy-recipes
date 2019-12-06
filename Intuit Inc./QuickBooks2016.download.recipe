@@ -78,7 +78,7 @@
 				<string>%RECIPE_CACHE_DIR%/%NAME%/Applications/%NAME% 2016.app</string>
 			</dict>
 		</dict>
-		
+
 	</array>
 </dict>
 </plist>
