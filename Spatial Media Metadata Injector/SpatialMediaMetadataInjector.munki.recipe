@@ -62,6 +62,18 @@
 			<key>Processor</key>
 			<string>DmgCreator</string>
 		</dict>
+        <dict>
+            <key>Processor</key>
+            <string>MunkiPkginfoMerger</string>
+            <key>Arguments</key>
+            <dict>
+                <key>additional_pkginfo</key>
+                <dict>
+                    <key>version</key>
+                    <string>%version%</string>
+                </dict>
+            </dict>
+        </dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
