@@ -36,7 +36,8 @@
 			</dict>
 			<key>Processor</key>
 			<string>InstallFromDMG</string>
-			<dict>
+		</dict>	
+		<dict>
             <key>Processor</key>
             <string>DeprecationWarning</string>
             <key>Arguments</key>
@@ -45,6 +46,7 @@
                 <string>The resulting munki install from the Notion pkgs now lead to an app that complains about improper installation. Pull requests welcome.  Without a solution, Notion recipes will be retired in February 2021.</string>
             </dict>
 		</dict>
+		
 	</array>
 </dict>
 </plist>

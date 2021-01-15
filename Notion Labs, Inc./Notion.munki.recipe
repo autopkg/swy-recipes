@@ -50,8 +50,11 @@
 				<key>version_comparison_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
+		</dict>
+		<dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
+		</dict>
 			<dict>
             <key>Processor</key>
             <string>DeprecationWarning</string>
