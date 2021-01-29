@@ -62,7 +62,7 @@
                             <key>group</key>
                             <string>staff</string>
                             <key>path</key>
-                            <string>Applications</string>
+                            <string>Applications/Notion.app</string>
                             <key>user</key>
                             <string>root</string>
                             <key>mode</key>
