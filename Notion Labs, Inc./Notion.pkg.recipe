@@ -60,6 +60,16 @@
                     <array>
                         <dict>
                             <key>group</key>
+                            <string>admin</string>
+                            <key>path</key>
+                            <string>Applications</string>
+                            <key>user</key>
+                            <string>root</string>
+                            <key>mode</key>
+                            <string>0775</string>
+                        </dict>
+                        <dict>
+                            <key>group</key>
                             <string>staff</string>
                             <key>path</key>
                             <string>Applications/Notion.app</string>
