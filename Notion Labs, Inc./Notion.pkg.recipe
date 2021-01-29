@@ -60,7 +60,7 @@
                     <array>
                         <dict>
                             <key>group</key>
-                            <string>admin</string>
+                            <string>staff</string>
                             <key>path</key>
                             <string>Applications</string>
                             <key>user</key>
