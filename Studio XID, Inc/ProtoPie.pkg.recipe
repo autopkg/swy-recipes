@@ -10,8 +10,6 @@
 	<string>com.github.swy.pkg.ProtoPie</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>io.protopie</string>
 		<key>NAME</key>
 		<string>ProtoPie</string>
 	</dict>

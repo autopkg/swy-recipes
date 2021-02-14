@@ -12,8 +12,6 @@
 	<dict>
 		<key>APP_FILENAME</key>
 		<string>SQL Operations Studio</string>
-		<key>BUNDLE_ID</key>
-		<string>com.sqlopsstudio.oss</string>
 		<key>NAME</key>
 		<string>sqlops</string>
 	</dict>
