@@ -2,13 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Comment</key>
-    <string>Created with Recipe Robot v1.0.5 (https://github.com/homebysix/recipe-robot)</string>
     <key>Description</key>
     <string>Downloads the latest version of Notion and imports it into Munki.</string>
     <key>Identifier</key>
     <string>com.github.swy.munki.Notion</string>
-      <key>Input</key>
+    <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/%NAME%</string>
@@ -16,16 +14,20 @@
         <string>Notion</string>
         <key>pkginfo</key>
         <dict>
+            <key>blocking_applications</key>
+            <array>
+                <string>Notion</string>
+            </array>
             <key>catalogs</key>
             <array>
                 <string>testing</string>
             </array>
-           	<key>category</key>
-			<string>Productivity</string>
-			<key>developer</key>
-			<string>Notion Labs, Inc.</string>
+            <key>category</key>
+            <string>Productivity</string>
             <key>description</key>
             <string>A unified workspace for modern teams.</string>
+            <key>developer</key>
+            <string>Notion Labs, Inc.</string>
             <key>display_name</key>
             <string>Notion</string>
             <key>name</key>
@@ -35,33 +37,22 @@
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.3.1</string>
+    <string>1.1</string>
     <key>ParentRecipe</key>
-	<string>com.github.swy.download.Notion</string>
+    <string>com.github.swy.download.Notion</string>
     <key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>pkg_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
-				<key>repo_subdirectory</key>
-				<string>%MUNKI_REPO_SUBDIR%</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-			<key>Processor</key>
-			<string>MunkiImporter</string>
-		</dict>
-			<dict>
+    <array>
+        <dict>
             <key>Processor</key>
-            <string>DeprecationWarning</string>
+            <string>MunkiImporter</string>
             <key>Arguments</key>
             <dict>
-                <key>warning_message</key>
-                <string>The resulting munki install from the Notion pkgs now lead to an app that complains about improper installation. Pull requests welcome.  Without a solution, Notion recipes will be retired in February 2021.</string>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
             </dict>
-		</dict>
+        </dict>
     </array>
 </dict>
 </plist>
