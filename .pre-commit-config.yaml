@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/homebysix/pre-commit-macadmin
-  rev: v1.5.1
+  rev: v1.18.0
   hooks:
   - id: check-autopkg-recipes
     args: ['--recipe-prefix', 'com.github.swy.', '--strict']
@@ -8,11 +8,11 @@ repos:
   - id: forbid-autopkg-trust-info
   - id: check-plists
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v2.3.0
+  rev: v5.0.0
   hooks:
   - id: check-added-large-files
     args: ['--maxkb=100']
-  - id: check-byte-order-marker
+  - id: fix-byte-order-marker
   - id: check-case-conflict
   - id: check-merge-conflict
   - id: end-of-file-fixer
