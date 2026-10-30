@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest version of Notion and imports it into Munki.</string>
+    <string>Downloads the latest version of Notion and imports it into Munki. The default ARCH is universal, so supported_architectures lists both arm64 and x86_64; if you set ARCH to apple-silicon or intel, override pkginfo supported_architectures to match.</string>
     <key>Identifier</key>
     <string>com.github.swy.munki.Notion</string>
     <key>Input</key>
@@ -32,6 +32,11 @@
             <string>Notion</string>
             <key>name</key>
             <string>%NAME%</string>
+            <key>supported_architectures</key>
+            <array>
+                <string>arm64</string>
+                <string>x86_64</string>
+            </array>
             <key>unattended_install</key>
             <true/>
             <key>postinstall_script</key>

@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest version of Notion and creates a package.</string>
+    <string>Downloads the latest version of Notion and creates a package. Set ARCH to universal (default), apple-silicon, or intel to choose which build is packaged. The architecture is included in the package name.</string>
     <key>Identifier</key>
     <string>com.github.swy.pkg.Notion</string>
     <key>Input</key>
     <dict>
+        <key>ARCH</key>
+        <string>universal</string>
         <key>NAME</key>
         <string>Notion</string>
     </dict>
@@ -37,7 +39,7 @@
                 <key>destination_path</key>
                 <string>%pkgroot%/Applications/Notion.app</string>
                 <key>source_path</key>
-                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg/Notion.app</string>
+                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%-%ARCH%.dmg/Notion.app</string>
             </dict>
             <key>Processor</key>
             <string>Copier</string>
@@ -46,7 +48,7 @@
             <key>Arguments</key>
             <dict>
                 <key>dmg_path</key>
-                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
+                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%-%ARCH%.dmg</string>
             </dict>
             <key>Processor</key>
             <string>AppDmgVersioner</string>
@@ -82,7 +84,7 @@
                     <key>id</key>
                     <string>%bundleid%</string>
                     <key>pkgname</key>
-                    <string>%NAME%-%version%</string>
+                    <string>%NAME%-%ARCH%-%version%</string>
                     <key>pkgroot</key>
                     <string>%RECIPE_CACHE_DIR%/%NAME%</string>
                     <key>version</key>
